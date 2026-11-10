@@ -1,0 +1,20 @@
+@host = http://localhost:5131
+
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{
+  "nome": "Maria Teste",
+  "email": "maria@teste.com",
+  "senha": "Senha@123"
+}
+
+###
+
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@fcg.com",
+  "senha": "Admin@123"
+}
